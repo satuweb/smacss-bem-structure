@@ -1,17 +1,11 @@
-Sass + SMACSS
+SMACSS + BEM 
 ==============
-
-To organize your Sass project with SMACSS organisation. Inspired by SMACSS from Jonathan Snook. To know more, go to : http://smacss.com
-
-You can use it with any framework like Bootstrap or Foundation (to put in scss/vendor and override it in vendor-override)
+Base structure for every projects
 
 Based on
 ==
- - Idiomatic css
- - POPY-starter-HTML-SCSS
+ - Bootstrap
 
 Team
 ==
-Jonathan Path @jonathanpath / http://jonathanpath.com
-
-Laurent Sutterlity @sutterlity / http://sutterlity.fr
+satu @satuweb.it / http://satuweb.it
