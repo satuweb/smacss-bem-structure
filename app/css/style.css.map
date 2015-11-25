@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": ";;;;;;;;;;;;;;;;;;;;;;;;;;AAIA,cAAe;EACX,SAAS,ECuBG,OAAgB;EDtB5B,OAAO,EAAE,QAAe;EACxB,MAAM,EAAE,MAAM",
+"sources": ["../scss/layout/_constrained.scss","../scss/_site-settings.scss"],
+"names": [],
+"file": "style.css"
+}

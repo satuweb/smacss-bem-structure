@@ -1,0 +1,17 @@
+{
+  "name": "test-smacss",
+  "description": "test smacss",
+  "main": "main.js",
+  "authors": [
+    "satuweb"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "smacss-test"
+  ],
+  "moduleType": [],
+  "homepage": "",
+  "dependencies": {
+    "jquery": "~2.1.4"
+  }
+}
