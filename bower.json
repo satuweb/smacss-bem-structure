@@ -1,6 +1,6 @@
 {
-  "name": "test-smacss",
-  "description": "test smacss",
+  "name": "smacss-bem-structure",
+  "description": "smacss-bem-structure",
   "main": "main.js",
   "authors": [
     "satuweb"
