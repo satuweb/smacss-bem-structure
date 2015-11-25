@@ -1,14 +1,14 @@
 {
-  "name": "test-smacss",
+  "name": "smacss+bem structure",
   "version": "1.0.0",
-  "description": "test smacss",
+  "description": "smacss+bem structure",
   "main": "main.js",
   "scripts": {
     "test": "tc"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/satuweb/test-1.git"
+    "url": "https://github.com/satuweb/smacss-bem-structure.git"
   },
   "keywords": [
     "smacss-test"
@@ -16,9 +16,9 @@
   "author": "satuweb",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/satuweb/test-1/issues"
+    "url": "https://github.com/satuweb/smacss-bem-structure.git/issues"
   },
-  "homepage": "https://github.com/satuweb/test-1#readme",
+  "homepage": "https://github.com/satuweb/smacss-bem-structure.git#readme",
   "devDependencies": {
     "grunt": "^0.4.5",
     "grunt-browser-sync": "^2.2.0",
