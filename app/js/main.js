@@ -1,1 +1,5 @@
-//MAIN JAVASCRIPT FILE
+//MAIN JAVASCRIP
+
+$(document).ready(function(){
+
+});

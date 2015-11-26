@@ -1,21 +1,12 @@
 /*
- * SMACSS + SCSS starter v2.1
- * Inspired by SMACSS http://smacss.com
- * Author: @jonathanpath
- * Date: 4 August 2015
+ * SMACSS + BEM STRUCTURE v1.0
+ * Author: @satuweb
+ * Date: 25 November 2015
  *
- * https://github.com/jonathanpath/SASS-SMACSS
- * See file structure in http://jonathanpath.com/sass+smacss/scss/style.scss
- *
- * Coding rules : https://github.com/necolas/idiomatic-css
+ * https://github.com/satuweb/smacss-bem-structure
  *
  */
- 
-/* Helper */
-@import "helper/functions";
 
-/* Site settings */
-@import "site-settings";
 
 /* Vendor */
 //@import "vendor/bootstrap";
@@ -25,7 +16,10 @@
 @import "base";
 
 /* Layouts */
-@import "layout/constrained";
+@import "layout";
 
 /* Modules */
-@import "modules/box";
+@import "modules";
+
+/* State */
+@import "state";
