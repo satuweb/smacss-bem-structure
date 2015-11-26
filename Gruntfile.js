@@ -25,6 +25,10 @@ module.exports = function(grunt) {
       bower: {
         files: ['bower.json'],
         tasks: ['wiredep']
+      },
+      scripts: {
+        files: ['app/js/*.js'],
+        tasks: ['uglify']
       }
     },
 
@@ -74,7 +78,7 @@ module.exports = function(grunt) {
           beautify: true
         },
         files: {
-          'js/min/main.min.js': ['app/js/main.js', 'app/js/vendor/bootstrap.js']
+          'app/js/min/main.min.js': ['app/js/main.js']
         }
       }
     }

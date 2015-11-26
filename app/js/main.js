@@ -1,4 +1,4 @@
-//MAIN JAVASCRIP
+//MAIN JAVASCRIPT
 
 $(document).ready(function(){
 
