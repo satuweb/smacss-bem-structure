@@ -1,16 +1,15 @@
 {
-  "name": "smacss-bem-structure",
-  "description": "smacss-bem-structure",
-  "main": "main.js",
+  "name": "smacss-bem-structure-master",
+  "description": "smacss-bem-structure-master",
+  "main": "Gruntfile.js",
   "authors": [
     "satuweb"
   ],
   "license": "ISC",
   "keywords": [
-    "smacss-test"
+    "smacss-bem-structure-master"
   ],
   "moduleType": [],
-  "homepage": "",
   "dependencies": {
     "jquery": "~2.1.4"
   }
