@@ -28,18 +28,9 @@ module.exports = function(grunt) {
         tasks: ['wiredep']
       },
       scripts: {
-        files: ['app/js/*.js'],
+        files: ['app/js/custom/*.js'],
         tasks: ['uglify']
-      },
-      js_frontend: {
-        files: [
-          'bower_components/jquery/dist/jquery.js',
-        ],   
-        tasks: ['concat:js_frontend','uglify:frontend'],    
-        options: {
-          livereload: true
-        }
-      },
+      }
     },
 
     browserSync: {
@@ -87,26 +78,34 @@ module.exports = function(grunt) {
         ]
       }
     },
-    concat: {
-      options: {
-        separator: ';',
+    paths: {
+      src: {
+        js: 'app/js/custom/*.js'
       },
-      js_frontend: {
-        src: [
-          'bower_components/jquery/dist/jquery.js',
-        ],
-        dest: ' app/js/main.js',
+      dest: {
+        jsMin: 'app/js/min/main.min.js'
+      }
+    },
+    concat: {
+      js: {
+        options: {
+          separator: ';'
+        },
+        src: '<%= paths.src.js %>',
+        dest: '<%= paths.dest.js %>'
       }
     },
     uglify: {
-      frontend: {
-        options: {
-          beautify: true
-        },
-        files: {
-          'app/js/min/main.min.js': ['app/js/main.js','app/js/load-partials.js' ]
-        }
+
+      options: {
+        beautify: true,
+        compress: true
+      },
+      target: {
+        src: '<%= paths.src.js %>',
+        dest: '<%= paths.dest.jsMin %>'
       }
+
     }
   });
   grunt.registerTask('default', ['browserSync', 'watch']);
