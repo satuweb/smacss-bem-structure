@@ -7,21 +7,23 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-wiredep');
   grunt.loadNpmTasks('grunt-contrib-concat');
   grunt.loadNpmTasks('grunt-contrib-uglify');
+  grunt.loadNpmTasks('grunt-contrib-cssmin');
+
    
   grunt.initConfig({
        
     sass: { 
       dev: { 
         files: {
-            'app/css/style.css': 'app/scss/style.scss'
+          'app/css/style.css': 'app/scss/**/*.scss'
         }
       }
     },
      
     watch: {
       sass: {
-        files: 'app/scss/*.scss',
-        tasks: ['compass']
+        files: 'app/scss/**/*.scss',
+        tasks: ['compass', 'cssmin']
       },
       bower: {
         files: ['bower.json'],
@@ -60,7 +62,7 @@ module.exports = function(grunt) {
         options: {              
           sassDir: 'app/scss',
           cssDir: 'app/css',
-          environment: 'develop'
+          environment: 'development'
         }
       },
       dev: {                    
@@ -70,14 +72,28 @@ module.exports = function(grunt) {
         }
       }
     },
+
     wiredep: {
       task: {
         src: [
           'app/**/*.html',   
-          'app/scss/style.scss',
+          'app/scss/**/*.scss',
         ]
       }
     },
+
+    cssmin: {
+      target: {
+        files: [{
+          expand: true,
+          cwd: 'app/css',
+          src: ['*.css', '!*.min.css'],
+          dest: 'app/css',
+          ext: '.min.css'
+        }]
+      }
+    },
+
     paths: {
       src: {
         js: 'app/js/custom/*.js'
@@ -86,6 +102,7 @@ module.exports = function(grunt) {
         jsMin: 'app/js/min/main.min.js'
       }
     },
+
     concat: {
       js: {
         options: {

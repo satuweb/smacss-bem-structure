@@ -4,6 +4,8 @@ $( document ).ready(function() {
   
     // LOAD PARTIALS
     $.get("../partials/menu-primary.html", '', function (data) { $(".menu-primary").append(data); });
+    $.get("../partials/carousel.html", '', function (data) { $(".carousel").append(data); });
+    $.get("../partials/contact-form.html", '', function (data) { $(".contact").append(data); });
   
   $.ajaxSetup({ async: true });
 

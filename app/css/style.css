@@ -96,7 +96,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
    Layout/Constrained
    ======================= */
 /* line 5, ../scss/layout/_wrapper.scss */
-.l-constrained {
+.wrapper {
   max-width: 71.25em;
   padding: 0 1.25em;
   margin: 0 auto;
