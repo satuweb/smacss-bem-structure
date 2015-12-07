@@ -55,8 +55,9 @@ module.exports = function(grunt) {
           https: false,
           browser: ["google chrome"]
         }
-      },
+      }
     },
+
     compass: {                 
       dist: {                   
         options: {              
@@ -112,8 +113,8 @@ module.exports = function(grunt) {
         dest: '<%= paths.dest.js %>'
       }
     },
-    uglify: {
 
+    uglify: {
       options: {
         beautify: true,
         compress: true
@@ -122,8 +123,8 @@ module.exports = function(grunt) {
         src: '<%= paths.src.js %>',
         dest: '<%= paths.dest.jsMin %>'
       }
-
     }
+
   });
   grunt.registerTask('default', ['browserSync', 'watch']);
 };

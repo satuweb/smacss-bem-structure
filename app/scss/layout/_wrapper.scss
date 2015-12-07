@@ -3,7 +3,5 @@
    ======================= */
 
 .wrapper{
-    max-width: $wrapper-width;
-    padding: 0 pxtoem(20,16);
-    margin: 0 auto;
+  @extend .container;
 }

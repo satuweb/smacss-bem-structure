@@ -2,18 +2,9 @@
    Modules/Box
    ======================= */
 
-.section {
-
+header, section, footer {
+  @extend .row;
 }
-
-.section-header  {
-
-}
-
-.section-body  {
-
-}
-
-.section-footer  {
-
+div, article, nav{
+  @extend .col;
 }
