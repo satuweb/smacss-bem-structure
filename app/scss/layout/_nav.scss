@@ -5,3 +5,7 @@
 nav {
   @extend .s12;
 }
+
+.menu-primary__items-list{
+  @extend .right, .hide-on-med-and-down;
+}

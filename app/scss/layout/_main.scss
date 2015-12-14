@@ -2,14 +2,13 @@
    Layout/Main
    ======================= */
 
-.l-main {
+.main-content {
 
 }
 
-.main-head {
-
+.contact-form__item{
+  @extend .input-field;
 }
-
-.main-title {
-
+textarea{
+  @extend .materialize-textarea;
 }
