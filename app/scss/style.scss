@@ -10,16 +10,16 @@
 
 /* Vendor */
 //@import "vendor/bootstrap";
-@import "vendor/materialize/materialize";
+@import 'vendor/materialize/materialize';
 
 /* Base */
-@import "base";
+@import 'base';
 
 /* Layouts */
-@import "layout";
+@import 'layout';
 
 /* Modules */
-@import "modules";
+@import 'modules';
 
 /* State */
-@import "state";
+@import 'state';

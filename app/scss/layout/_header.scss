@@ -2,10 +2,12 @@
    Layout/Header
    ======================= */
 
-.logo{
-  @extend .s12;
-  img{
-    @extend .circle, .responsive-img;
-  }
-} 
+.header
+{
+    @extend .s12;
 
+    &__logo
+    {
+        @extend .s2;
+    }
+}

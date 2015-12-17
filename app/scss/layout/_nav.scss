@@ -2,10 +2,18 @@
    Layout/Nav
    ======================= */
 
-nav {
+.menu-primary {
   @extend .s12;
 }
-
 .menu-primary__items-list{
   @extend .right, .hide-on-med-and-down;
+}
+
+
+.menu-primary__item{
+  //TODO
+}
+
+.menu-primary__link{
+  //TODO
 }

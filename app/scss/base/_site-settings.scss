@@ -1,34 +1,35 @@
-@charset "UTF-8";
+@charset 'UTF-8';
 
 // ----------------------
 // == Site settings
 // ----------------------
 
 // = Fonts
-$font1: "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font1: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 $font2: Georgia, serif;
 
 // = Colors
 // -----------------------------
 
 $grey: #667080;
-$white: #F2F2F2;
+$white: #f2f2f2;
+$black: #000;
 
 $color1: $grey;
 $color2: $white;
+$color3: $black;
 
 // = Breakpoints
 // -----------------------------
 
-$phone-portrait:    320px;      
-$phone-landscape:   480px;    
-$tablet:            768px;  
-$desktop-md:        1024px; 
-$desktop-lg:        1140px;
+$phone-portrait: 320px;
+$phone-landscape: 480px;
+$tablet: 768px;
+$desktop-md: 1024px;
+$desktop-lg: 1140px;
 
 // = Grid
 // -----------------------------
 
 $wrapper-width: pxtoem($desktop-lg, 16);
 $whiteSpace: 20px;
-

@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/satuweb/smacss-bem-structure.git#readme",
   "devDependencies": {
+    "csscomb": "^3.1.8",
     "grunt": "^0.4.5",
     "grunt-browser-sync": "^2.2.0",
     "grunt-contrib-compass": "^1.0.4",
@@ -28,6 +29,7 @@
     "grunt-wiredep": "^2.0.0"
   },
   "dependencies": {
+    "csscomb": "^3.1.8",
     "wiredep": "^2.2.2"
   }
 }

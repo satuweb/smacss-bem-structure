@@ -1,29 +1,22 @@
 /* =======================
    Modules/Box
    ======================= */
-.row .col, 
-.row article, 
-.row div, 
-.row nav, 
-footer .col, 
-footer article, 
-footer div, 
-footer nav, 
-header .col, 
-header article, 
-header div, 
-header nav, 
-section .col, 
-section article, 
-section div, 
-section nav{
-  float: none;
+header,
+section,
+footer
+{
+    margin: $whiteSpace auto;
+
+    @extend .row;
 }
-header, section, footer {
-  @extend .row;
-  margin: $whiteSpace auto;
-}
-div, article, nav{
-  @extend .col;
+div,
+article,
+nav
+{
+    @extend .col;
 }
 
+.parallax-container
+{
+    @extend .s12;
+}
