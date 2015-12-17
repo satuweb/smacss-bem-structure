@@ -3226,12 +3226,12 @@ ul li {
 }
 
 /* line 61, ../scss/vendor/materialize/components/_global.scss */
-.z-depth-1, nav, .card-panel, .card, .toast, .btn, .btn-large, .btn-floating, .dropdown-content, .collapsible, .side-nav {
+.z-depth-1, nav, .card-panel, .card, .toast, .btn, .btn-large, .contact-form__btn, .submit, .btn-floating, .dropdown-content, .collapsible, .side-nav {
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
 }
 
 /* line 64, ../scss/vendor/materialize/components/_global.scss */
-.z-depth-1-half, .btn:hover, .btn-large:hover, .btn-floating:hover {
+.z-depth-1-half, .btn:hover, .btn-large:hover, .contact-form__btn:hover, .submit:hover, .btn-floating:hover {
   box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
 }
 
@@ -9472,7 +9472,7 @@ small {
   justify-content: space-between;
 }
 /* line 47, ../scss/vendor/materialize/components/_toast.scss */
-.toast .btn, .toast .btn-large, .toast .btn-flat {
+.toast .btn, .toast .btn-large, .toast .contact-form__btn, .toast .submit, .toast .btn-flat {
   margin: 0;
   margin-left: 3rem;
 }
@@ -9627,7 +9627,7 @@ small {
 }
 
 /* line 2, ../scss/vendor/materialize/components/_buttons.scss */
-.btn, .btn-large, .btn-flat {
+.btn, .btn-large, .contact-form__btn, .submit, .btn-flat {
   border: none;
   border-radius: 2px;
   display: inline-block;
@@ -9641,30 +9641,30 @@ small {
 }
 
 /* line 17, ../scss/vendor/materialize/components/_buttons.scss */
-.btn.disabled, .disabled.btn-large, .btn-floating.disabled, .btn-large.disabled, .btn:disabled, .btn-large:disabled, .btn-large:disabled, .btn-floating:disabled {
+.btn.disabled, .disabled.btn-large, .disabled.contact-form__btn, .disabled.submit, .btn-floating.disabled, .btn-large.disabled, .btn:disabled, .btn-large:disabled, .contact-form__btn:disabled, .submit:disabled, .btn-large:disabled, .btn-floating:disabled {
   background-color: #DFDFDF !important;
   box-shadow: none;
   color: #9F9F9F !important;
   cursor: default;
 }
 /* line 22, ../scss/vendor/materialize/components/_buttons.scss */
-.btn.disabled *, .disabled.btn-large *, .btn-floating.disabled *, .btn-large.disabled *, .btn:disabled *, .btn-large:disabled *, .btn-large:disabled *, .btn-floating:disabled * {
+.btn.disabled *, .disabled.btn-large *, .disabled.contact-form__btn *, .disabled.submit *, .btn-floating.disabled *, .btn-large.disabled *, .btn:disabled *, .btn-large:disabled *, .contact-form__btn:disabled *, .submit:disabled *, .btn-large:disabled *, .btn-floating:disabled * {
   pointer-events: none;
 }
 /* line 26, ../scss/vendor/materialize/components/_buttons.scss */
-.btn.disabled:hover, .disabled.btn-large:hover, .btn-floating.disabled:hover, .btn-large.disabled:hover, .btn:disabled:hover, .btn-large:disabled:hover, .btn-large:disabled:hover, .btn-floating:disabled:hover {
+.btn.disabled:hover, .disabled.btn-large:hover, .disabled.contact-form__btn:hover, .disabled.submit:hover, .btn-floating.disabled:hover, .btn-large.disabled:hover, .btn:disabled:hover, .btn-large:disabled:hover, .contact-form__btn:disabled:hover, .submit:disabled:hover, .btn-large:disabled:hover, .btn-floating:disabled:hover {
   background-color: #DFDFDF;
   color: #9F9F9F;
 }
 
 /* line 33, ../scss/vendor/materialize/components/_buttons.scss */
-.btn i, .btn-large i, .btn-floating i, .btn-large i, .btn-flat i {
+.btn i, .btn-large i, .contact-form__btn i, .submit i, .btn-floating i, .btn-large i, .btn-flat i {
   font-size: 1.3rem;
   line-height: inherit;
 }
 
 /* line 40, ../scss/vendor/materialize/components/_buttons.scss */
-.btn, .btn-large {
+.btn, .btn-large, .contact-form__btn, .submit {
   text-decoration: none;
   color: #fff;
   background-color: #26a69a;
@@ -9678,7 +9678,7 @@ small {
   cursor: pointer;
 }
 /* line 50, ../scss/vendor/materialize/components/_buttons.scss */
-.btn:hover, .btn-large:hover {
+.btn:hover, .btn-large:hover, .contact-form__btn:hover, .submit:hover {
   background-color: #2bbbad;
 }
 
@@ -10050,7 +10050,7 @@ a.waves-effect .waves-ripple {
   width: 100%;
 }
 /* line 40, ../scss/vendor/materialize/components/_modal.scss */
-.modal .modal-footer .btn, .modal .modal-footer .btn-large, .modal .modal-footer .btn-flat {
+.modal .modal-footer .btn, .modal .modal-footer .btn-large, .modal .modal-footer .contact-form__btn, .modal .modal-footer .submit, .modal .modal-footer .btn-flat {
   float: right;
   margin: 6px 0;
 }
@@ -11054,8 +11054,9 @@ form p:last-child {
      Switch
 ***************/
 /* line 534, ../scss/vendor/materialize/components/_form.scss */
-.switch,
-.switch * {
+.switch, .contact-form__switch,
+.switch *,
+.contact-form__switch * {
   -webkit-user-select: none;
   -moz-user-select: none;
   -khtml-user-select: none;
@@ -11063,29 +11064,29 @@ form p:last-child {
 }
 
 /* line 542, ../scss/vendor/materialize/components/_form.scss */
-.switch label {
+.switch label, .contact-form__switch label {
   cursor: pointer;
 }
 
 /* line 546, ../scss/vendor/materialize/components/_form.scss */
-.switch label input[type=checkbox] {
+.switch label input[type=checkbox], .contact-form__switch label input[type=checkbox] {
   opacity: 0;
   width: 0;
   height: 0;
 }
 
 /* line 552, ../scss/vendor/materialize/components/_form.scss */
-.switch label input[type=checkbox]:checked + .lever {
+.switch label input[type=checkbox]:checked + .lever, .contact-form__switch label input[type=checkbox]:checked + .lever, .switch label input[type=checkbox]:checked + .contact-form__lever, .contact-form__switch label input[type=checkbox]:checked + .contact-form__lever {
   background-color: #84c7c1;
 }
 
 /* line 556, ../scss/vendor/materialize/components/_form.scss */
-.switch label input[type=checkbox]:checked + .lever:after {
+.switch label input[type=checkbox]:checked + .lever:after, .contact-form__switch label input[type=checkbox]:checked + .lever:after, .switch label input[type=checkbox]:checked + .contact-form__lever:after, .contact-form__switch label input[type=checkbox]:checked + .contact-form__lever:after {
   background-color: #26a69a;
 }
 
 /* line 560, ../scss/vendor/materialize/components/_form.scss */
-.switch label .lever {
+.switch label .lever, .contact-form__switch label .lever, .switch label .contact-form__lever, .contact-form__switch label .contact-form__lever {
   content: "";
   display: inline-block;
   position: relative;
@@ -11100,7 +11101,7 @@ form p:last-child {
 }
 
 /* line 574, ../scss/vendor/materialize/components/_form.scss */
-.switch label .lever:after {
+.switch label .lever:after, .contact-form__switch label .lever:after, .switch label .contact-form__lever:after, .contact-form__switch label .contact-form__lever:after {
   content: "";
   position: absolute;
   display: inline-block;
@@ -11115,28 +11116,31 @@ form p:last-child {
 }
 
 /* line 589, ../scss/vendor/materialize/components/_form.scss */
-input[type=checkbox]:checked:not(:disabled) ~ .lever:active:after {
+input[type=checkbox]:checked:not(:disabled) ~ .lever:active:after, input[type=checkbox]:checked:not(:disabled) ~ .contact-form__lever:active:after {
   box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.4), 0 0 0 15px rgba(38, 166, 154, 0.1);
 }
 
 /* line 593, ../scss/vendor/materialize/components/_form.scss */
-input[type=checkbox]:not(:disabled) ~ .lever:active:after {
+input[type=checkbox]:not(:disabled) ~ .lever:active:after, input[type=checkbox]:not(:disabled) ~ .contact-form__lever:active:after {
   box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.4), 0 0 0 15px rgba(0, 0, 0, 0.08);
 }
 
 /* line 597, ../scss/vendor/materialize/components/_form.scss */
-.switch label input[type=checkbox]:checked + .lever:after {
+.switch label input[type=checkbox]:checked + .lever:after, .contact-form__switch label input[type=checkbox]:checked + .lever:after, .switch label input[type=checkbox]:checked + .contact-form__lever:after, .contact-form__switch label input[type=checkbox]:checked + .contact-form__lever:after {
   left: 24px;
 }
 
 /* line 602, ../scss/vendor/materialize/components/_form.scss */
-.switch input[type=checkbox][disabled] + .lever {
+.switch input[type=checkbox][disabled] + .lever, .contact-form__switch input[type=checkbox][disabled] + .lever, .switch input[type=checkbox][disabled] + .contact-form__lever, .contact-form__switch input[type=checkbox][disabled] + .contact-form__lever {
   cursor: default;
 }
 
 /* line 605, ../scss/vendor/materialize/components/_form.scss */
-.switch label input[type=checkbox][disabled] + .lever:after,
-.switch label input[type=checkbox][disabled]:checked + .lever:after {
+.switch label input[type=checkbox][disabled] + .lever:after, .contact-form__switch label input[type=checkbox][disabled] + .lever:after, .switch label input[type=checkbox][disabled] + .contact-form__lever:after, .contact-form__switch label input[type=checkbox][disabled] + .contact-form__lever:after,
+.switch label input[type=checkbox][disabled]:checked + .lever:after,
+.contact-form__switch label input[type=checkbox][disabled]:checked + .lever:after,
+.switch label input[type=checkbox][disabled]:checked + .contact-form__lever:after,
+.contact-form__switch label input[type=checkbox][disabled]:checked + .contact-form__lever:after {
   background-color: #BDBDBD;
 }
 
@@ -11270,7 +11274,7 @@ select:disabled {
   width: 100%;
 }
 /* line 723, ../scss/vendor/materialize/components/_form.scss */
-.file-field .btn, .file-field .btn-large {
+.file-field .btn, .file-field .btn-large, .file-field .contact-form__btn, .file-field .submit {
   float: left;
   height: 3rem;
   line-height: 3rem;
@@ -13142,26 +13146,36 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 /* ===========================
    Layout
    =========================== */
-/* ==|====================
+/* ======================
    Layout/Header
    ======================= */
-/* ==|====================
+/* ======================
    Layout/Main
    ======================= */
-/* ==|====================
+/* ======================
    Layout/Constrained
    ======================= */
-/* ==|====================
+/* line 9, ../scss/layout/_wrapper.scss */
+label {
+  display: none;
+}
+
+/* line 23, ../scss/layout/_wrapper.scss */
+.contact-form__switch {
+  margin-bottom: 20px;
+}
+
+/* ======================
    Layout/Nav
    ======================= */
-/* ==|====================
+/* ======================
    Layout/Footer
    ======================= */
 /* Modules */
 /* ==|====================
    Modules
    ======================= */
-/* ==|====================
+/* =======================
    Modules/Box
    ======================= */
 /* line 4, ../scss/modules/_box.scss */
@@ -13207,8 +13221,11 @@ header, section, footer {
   margin: 20px auto;
 }
 
-/* ==|====================
+/* =======================
    Module/Icons
+   ======================= */
+/* =======================
+   Modules/Buttons
    ======================= */
 /* State */
 /* ==|====================

@@ -4,25 +4,31 @@
 // == Site settings
 // ----------------------
 
-// Fonts
+// = Fonts
 $font1: "Helvetica Neue", Helvetica, Arial, sans-serif;
 $font2: Georgia, serif;
 
 // = Colors
 // -----------------------------
 
-$red: #df2e30;
-$blue: #1894c4;
+$grey: #667080;
+$white: #F2F2F2;
 
-$color1: $red;
-$color2: $blue;
+$color1: $grey;
+$color2: $white;
 
+// = Breakpoints
+// -----------------------------
+
+$phone-portrait:    320px;      
+$phone-landscape:   480px;    
+$tablet:            768px;  
+$desktop-md:        1024px; 
+$desktop-lg:        1140px;
 
 // = Grid
 // -----------------------------
 
-// Max width wrapper
-$wrapper-width: pxtoem(1140, 16);
-
-//Spacing
+$wrapper-width: pxtoem($desktop-lg, 16);
 $whiteSpace: 20px;
+

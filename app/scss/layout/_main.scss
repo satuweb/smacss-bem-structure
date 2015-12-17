@@ -1,4 +1,4 @@
-/* ==|====================
+/* ======================
    Layout/Main
    ======================= */
 
@@ -6,9 +6,4 @@
 
 }
 
-.contact-form__item{
-  @extend .input-field;
-}
-textarea{
-  @extend .materialize-textarea;
-}
+

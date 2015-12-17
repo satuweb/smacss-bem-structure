@@ -1,7 +1,29 @@
-/* ==|====================
+/* ======================
    Layout/Constrained
    ======================= */
 
 .wrapper{
   @extend .container;
+}
+//MAIN CONDITION
+label{
+  display: none;
+}
+
+//SECTION FORM
+.contact-form__item{
+  @extend .input-field;
+}
+textarea{
+  @extend .materialize-textarea;
+}
+.contact-form__lever{
+  @extend .lever;
+}
+.contact-form__switch{
+  @extend .switch;
+  margin-bottom: $whiteSpace;
+}
+.contact-form__btn{
+  @extend .btn;
 }
