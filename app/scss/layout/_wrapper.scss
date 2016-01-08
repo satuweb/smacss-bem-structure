@@ -2,36 +2,7 @@
    Layout/Constrained
    ======================= */
 
-.wrapper
-{
-    @extend .container;
+.wrapper {
+  @extend .container;
 }
 //MAIN CONDITION
-label
-{
-    display: none;
-}
-
-//SECTION FORM
-.contact-form__item
-{
-    @extend .input-field;
-}
-textarea
-{
-    @extend .materialize-textarea;
-}
-.contact-form__lever
-{
-    @extend .lever;
-}
-.contact-form__switch
-{
-    margin-bottom: $whiteSpace;
-
-    @extend .switch;
-}
-.contact-form__btn
-{
-    @extend .btn;
-}

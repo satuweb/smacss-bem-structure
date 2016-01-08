@@ -3,10 +3,10 @@
    ======================= */
 
 .menu-primary {
-  @extend .s12;
+  @extend .row;
 }
 .menu-primary__items-list{
-  @extend .right, .hide-on-med-and-down;
+  //TODO
 }
 
 

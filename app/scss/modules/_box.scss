@@ -3,20 +3,10 @@
    ======================= */
 header,
 section,
-footer
-{
-    margin: $whiteSpace auto;
-
-    @extend .row;
+footer {
+  margin: $whiteSpace auto;
 }
 div,
 article,
-nav
-{
-    @extend .col;
-}
-
-.parallax-container
-{
-    @extend .s12;
+nav {
 }

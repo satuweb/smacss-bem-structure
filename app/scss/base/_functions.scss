@@ -2,7 +2,6 @@
    Functions
    =========================== */
 
-@function pxtoem($px, $em)
-{
-    @return ($px / $em) * 1em;
+@function pxtoem($px, $em) {
+  @return ($px / $em) * 1em;
 }
